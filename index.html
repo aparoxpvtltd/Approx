@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparox AI | Smart, Scalable AI & IT Solutions</title>
+    <meta name="description" content="Aparox AI provides smart, scalable IT solutions, custom web engineering, and organic market intelligence for growing businesses.">
+    <link rel="icon" type="image/png" href="/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+    <!-- Main Navigation Bar -->
+    <header id="site-header" class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo-link" aria-label="Aparox AI Home">
+                <img src="/logo.png" alt="Aparox AI Logo" class="logo-img" id="site-logo">
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <div class="nav-dropdown-wrapper">
+                    <a href="/#services" class="nav-link dropdown-toggle">
+                        Services
+                        <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="/web-development.html" class="dropdown-item">
+                            <div class="dropdown-icon-box">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <div class="dropdown-item-text">
+                                <span class="dropdown-item-title">Web Development</span>
+                                <span class="dropdown-item-desc">High-speed, responsive, custom WebGL & 3D apps</span>
+                            </div>
+                        </a>
+                        <a href="/digital-marketing.html" class="dropdown-item">
+                            <div class="dropdown-icon-box">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                            </div>
+                            <div class="dropdown-item-text">
+                                <span class="dropdown-item-title">Digital Marketing</span>
+                                <span class="dropdown-item-desc">Multi-channel campaigns, SEO & market growth</span>
+                            </div>
+                        </a>
+                        <a href="/content-creation.html" class="dropdown-item">
+                            <div class="dropdown-icon-box">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+                            </div>
+                            <div class="dropdown-item-text">
+                                <span class="dropdown-item-title">Content Creation</span>
+                                <span class="dropdown-item-desc">Bespoke storytelling, graphics & video assets</span>
+                            </div>
+                        </a>
+                        <a href="/lead-generation.html" class="dropdown-item">
+                            <div class="dropdown-icon-box">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <div class="dropdown-item-text">
+                                <span class="dropdown-item-title">Lead Generation</span>
+                                <span class="dropdown-item-desc">Automated acquisition funnels & CRM integration</span>
+                            </div>
+                        </a>
+                        <a href="/custom-software.html" class="dropdown-item">
+                            <div class="dropdown-icon-box">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <div class="dropdown-item-text">
+                                <span class="dropdown-item-title">Custom Software Development</span>
+                                <span class="dropdown-item-desc">Enterprise web apps, APIs & cloud platforms</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/#analytics" class="nav-link">Analytics</a>
+                <a href="/#about" class="nav-link">About Us</a>
+                <a href="/#contact" class="nav-link">Contact Us</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Centered Dark Tech Aesthetic) -->
+        <section class="hero-section" id="hero">
+            <canvas id="hero-three-canvas" class="hero-three-canvas"></canvas>
+            <div class="hero-container">
+                <div class="hero-left">
+                    <span class="hero-quote-badge">BEYOND THE VISION</span>
+                    <h1 class="hero-title">
+                        Design the <em>Future</em>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Aparox AI engineers custom high-performance digital platforms using organic design and modern web technology.
+                    </p>
+
+                    <div class="hero-cta-wrap">
+                        <a href="#contact" class="btn btn-white">
+                            <span>Contact Us</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#services" class="btn btn-outline-white">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Our Services Section (Deep Dark Navy Theme) -->
+        <section id="services" class="section services-section-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag-light">Our Services</span>
+                    <h2 class="section-title-light">Complete Digital Solutions to Grow Your Business.</h2>
+                    <p class="section-desc-light">
+                        End-to-end digital engineering tailored to accelerate your company's revenue and operations.
+                    </p>
+                    <div class="services-slider-nav">
+                        <button class="services-nav-btn" id="services-prev" aria-label="Previous Service">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        </button>
+                        <button class="services-nav-btn" id="services-next" aria-label="Next Service">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="services-cards-grid">
+                    <div class="service-box">
+                        <div class="service-img-thumb thumb-web-dev">
+                            <span class="service-badge">Web Engineering</span>
+                        </div>
+                        <div class="service-box-body">
+                            <h4>Web Development</h4>
+                            <p>High-speed, responsive, custom WebGL & 3D web applications engineered for sub-second page loads and maximum conversion rates.</p>
+                            <a href="/web-development.html" class="service-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-img-thumb thumb-marketing">
+                            <span class="service-badge">Growth & SEO</span>
+                        </div>
+                        <div class="service-box-body">
+                            <h4>Digital Marketing</h4>
+                            <p>Data-driven multi-channel marketing campaigns, search engine optimization, and ROI tracking to maximize your brand visibility.</p>
+                            <a href="/digital-marketing.html" class="service-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-img-thumb thumb-content">
+                            <span class="service-badge">Creative Studio</span>
+                        </div>
+                        <div class="service-box-body">
+                            <h4>Content Creation</h4>
+                            <p>Bespoke digital storytelling, brand graphics, copy, and video assets designed to capture customer attention and build authority.</p>
+                            <a href="/content-creation.html" class="service-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-img-thumb thumb-leads">
+                            <span class="service-badge">Sales Automation</span>
+                        </div>
+                        <div class="service-box-body">
+                            <h4>Lead Generation</h4>
+                            <p>Automated client acquisition funnels, CRM integrations, and targeted lead capture systems built to turn visitors into buyers.</p>
+                            <a href="/lead-generation.html" class="service-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-img-thumb thumb-software">
+                            <span class="service-badge">Enterprise Software</span>
+                        </div>
+                        <div class="service-box-body">
+                            <h4>Custom Software Development</h4>
+                            <p>Bespoke web applications, cloud infrastructure, and enterprise software tailored to your specific business requirements.</p>
+                            <a href="/custom-software.html" class="service-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Proven Intelligence / Instant Audit Section -->
+        <section id="analytics" class="section audit-section-dark">
+            <div class="container">
+                <div class="audit-grid">
+                    <!-- LEFT: Content -->
+                    <div class="audit-left">
+                        <span class="section-tag-emerald mono">INSTANT AUDIT</span>
+                        <h2 class="audit-heading">Proven <em>Intelligence</em></h2>
+                        <p class="audit-desc">
+                            Run our interactive scraper to analyze local market capacity and projected online profit margins before we design.
+                        </p>
+
+                        <div class="audit-steps-list">
+                            <div class="audit-step-item">
+                                <div class="step-num-badge mono">01</div>
+                                <div class="step-content">
+                                    <h4>Input Target Parameters</h4>
+                                    <p>Enter your business name and location to define the scraper audit zone.</p>
+                                </div>
+                            </div>
+                            <div class="audit-step-item">
+                                <div class="step-num-badge mono">02</div>
+                                <div class="step-content">
+                                    <h4>Run Scraper Scan</h4>
+                                    <p>Our algorithms fetch local traffic data and construct a mock Report card instantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Terminal Scraper Card -->
+                    <div class="audit-right">
+                        <div class="terminal-card">
+                            <div class="terminal-bar">
+                                <div class="terminal-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="terminal-title mono">MARKET_SCRAPER.EXE</span>
+                            </div>
+                            <div class="terminal-body">
+                                <form id="analytics-form" class="terminal-form">
+                                    <div class="terminal-form-row">
+                                        <div class="terminal-field">
+                                            <label for="biz-name" class="mono">BUSINESS / SHOP NAME</label>
+                                            <input type="text" id="biz-name" placeholder="e.g. Peak Coffee" required>
+                                        </div>
+                                        <div class="terminal-field">
+                                            <label for="biz-location" class="mono">LOCATION</label>
+                                            <input type="text" id="biz-location" placeholder="e.g. Indiranagar, Bengaluru" required>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="biz-type" value="services">
+                                    <div class="terminal-actions">
+                                        <button type="submit" class="btn-scraper mono">RUN SCRAPER AUDIT</button>
+                                        <span class="system-badge mono">● SYSTEM_ACTIVE</span>
+                                    </div>
+                                </form>
+
+                                <!-- Results Panel -->
+                                <div id="analytics-results" class="terminal-results" style="display:none;">
+                                    <div class="terminal-results-header">
+                                        <h4 class="mono" id="result-biz-name">AUDIT REPORT GENERATED</h4>
+                                        <button id="recalculate-btn" class="btn-reset mono">↻ RESET</button>
+                                    </div>
+                                    <div class="terminal-stats-row">
+                                        <div class="terminal-stat">
+                                            <span class="mono stat-label">MARKET TAM</span>
+                                            <span class="stat-val" id="stat-tam">₹0</span>
+                                        </div>
+                                        <div class="terminal-stat">
+                                            <span class="mono stat-label">MONTHLY REACH</span>
+                                            <span class="stat-val" id="stat-customers">0</span>
+                                        </div>
+                                        <div class="terminal-stat terminal-stat-highlight">
+                                            <span class="mono stat-label">PROFIT UPLIFT</span>
+                                            <span class="stat-val" id="stat-profit">₹0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- Client Stories / Feedback Section (Seamless Dark Tech Aesthetic) -->
+        <section id="client-stories" class="section client-stories-section-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag-emerald mono">CLIENT STORIES & IMPACT</span>
+                    <h2 class="section-title-light">Proven Results for <em>Industry Leaders</em></h2>
+                    <p class="section-desc-light">
+                        Real-world growth stories from companies that scaled operations and revenue with Aparox custom engineering.
+                    </p>
+                </div>
+
+                <div class="stories-cards-grid">
+                    <!-- Story 1 -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="client-brand">
+                                <div class="client-avatar">NF</div>
+                                <div>
+                                    <h4 class="client-name">Nexus Financials</h4>
+                                    <span class="client-role mono">Fintech Platform</span>
+                                </div>
+                            </div>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                        <div class="story-impact-badge">
+                            <span class="impact-val">+240%</span>
+                            <span class="impact-label">Conversion Rate Lift</span>
+                        </div>
+                        <p class="story-body">
+                            "Aparox transformed our WebGL app infrastructure completely. The real-time interactive market visualizers doubled our qualified enterprise inquiries within 30 days."
+                        </p>
+                        <div class="story-footer">
+                            <strong>Marcus Vance</strong>
+                            <span>Chief Technology Officer</span>
+                        </div>
+                    </div>
+
+                    <!-- Story 2 (Featured) -->
+                    <div class="story-card story-card-featured">
+                        <div class="story-header">
+                            <div class="client-brand">
+                                <div class="client-avatar avatar-cyan">LL</div>
+                                <div>
+                                    <h4 class="client-name">Lumina Luxury Labs</h4>
+                                    <span class="client-role mono">E-Commerce Brand</span>
+                                </div>
+                            </div>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                        <div class="story-impact-badge badge-cyan">
+                            <span class="impact-val">4.8x ROI</span>
+                            <span class="impact-label">Organic Customer Growth</span>
+                        </div>
+                        <p class="story-body">
+                            "The market scraper audit provided insights no traditional agency had ever uncovered. Aparox built a high-speed web application that turned complex data into effortless conversions."
+                        </p>
+                        <div class="story-footer">
+                            <strong>Elena Rostova</strong>
+                            <span>VP of Brand Growth</span>
+                        </div>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="client-brand">
+                                <div class="client-avatar">AC</div>
+                                <div>
+                                    <h4 class="client-name">Apex Cyber Systems</h4>
+                                    <span class="client-role mono">SaaS Infrastructure</span>
+                                </div>
+                            </div>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                        <div class="story-impact-badge">
+                            <span class="impact-val">0.4s</span>
+                            <span class="impact-label">Global Page Load Speed</span>
+                        </div>
+                        <p class="story-quote">
+                            "Their full-stack engineering team re-architected our client portal from scratch with zero downtime. Exceptional delivery speed, custom code, and pixel-perfect execution."
+                        </p>
+                        <div class="story-footer">
+                            <strong>David K.</strong>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section about-section">
+            <!-- Background Circuit Line Pattern -->
+            <svg class="circuit-pattern-bg" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 100 H 250 V 250 H 450 V 400 H 700" stroke="#00b4d8" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.15"/>
+                <path d="M150 500 H 350 V 350 H 550" stroke="#0077b6" stroke-width="1.5" opacity="0.12"/>
+                <circle cx="250" cy="250" r="4" fill="#00b4d8" opacity="0.3"/>
+                <circle cx="450" cy="400" r="4" fill="#00b4d8" opacity="0.3"/>
+            </svg>
+
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual-wrap">
+                        <div class="about-image-card">
+                            <div class="image-slider-container">
+                                <div class="slider-slide active" id="slide-1">
+                                    <div class="tech-graphic-bg bg-slide-1"></div>
+                                </div>
+                                <div class="slider-slide" id="slide-2">
+                                    <div class="tech-graphic-bg bg-slide-2"></div>
+                                </div>
+                                <div class="slider-slide" id="slide-3">
+                                    <div class="tech-graphic-bg bg-slide-3"></div>
+                                </div>
+                            </div>
+
+                            <!-- Image Slider Navigation Arrows -->
+                            <div class="slider-nav-arrows">
+                                <button class="slider-arrow-btn" id="prev-slide" aria-label="Previous Slide">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                                </button>
+                                <button class="slider-arrow-btn" id="next-slide" aria-label="Next Slide">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 5"></polyline></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-tag-emerald mono">ABOUT APAROX AI</span>
+                        <h2 class="section-title-dark">
+                            Empowering Growth Through <i>Data & Digital Engineering</i>
+                        </h2>
+                        <p class="section-desc-dark about-body-text">
+                            Aparox AI Private Limited is a premier technology partner specializing in custom web applications, organic market intelligence, and automated revenue systems. We combine data-backed analytics with state-of-the-art UI/UX design to build scalable online engines for ambitious enterprises.
+                        </p>
+
+                        <div class="about-highlights-list">
+                            <div class="about-highlight-item">
+                                <div class="highlight-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>100% Custom Code Engineering</h4>
+                                    <p>Bespoke frontend and cloud architectures built for sub-second page loads, maximum security, and zero bloat.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-highlight-item">
+                                <div class="highlight-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Organic Market Intelligence</h4>
+                                    <p>Proprietary scraper tools and search analytics to validate market demand and ROI before writing code.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Dark Tech Aesthetic with Circuit Backdrop & Animations) -->
+        <section id="contact" class="section contact-section-dark">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-tag-emerald mono">GET IN TOUCH</span>
+                        <h2 class="contact-heading">Ready to scale your <i>business online?</i></h2>
+                        <p class="contact-desc">
+                            Request a custom market audit and web build proposal tailored to your company.
+                        </p>
+
+                        <div class="contact-details-animated">
+                            <div class="contact-card-item">
+                                <div class="card-icon-wrap">📧</div>
+                                <div>
+                                    <span class="detail-label-mono">DIRECT EMAIL</span>
+                                    <a href="mailto:hello@aparox.ai" class="detail-link-cyan">hello@aparox.ai</a>
+                                </div>
+                            </div>
+                            <div class="contact-card-item">
+                                <div class="card-icon-wrap">📍</div>
+                                <div>
+                                    <span class="detail-label-mono">HEADQUARTERS</span>
+                                    <p class="detail-val-light">Hebbal Industrial Area, Mysore, Karnataka, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-card-item">
+                                <div class="card-icon-wrap">⏱️</div>
+                                <div>
+                                    <span class="detail-label-mono">RESPONSE GUARANTEE</span>
+                                    <p class="detail-val-light">Engineering feedback within 24 business hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form-dark" id="contact-form">
+                        <div class="form-group-dark">
+                            <label for="contact-name" class="mono">YOUR NAME</label>
+                            <input type="text" id="contact-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group-dark">
+                            <label for="contact-email" class="mono">EMAIL ADDRESS</label>
+                            <input type="email" id="contact-email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group-dark">
+                            <label for="contact-message" class="mono">YOUR MESSAGE</label>
+                            <textarea id="contact-message" rows="4" placeholder="Tell us about your project requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-cyan-glow btn-full mono">
+                            <span>SEND MESSAGE</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="logo-link" aria-label="Aparox AI Home">
+                        <img src="/logo.png" alt="Aparox AI Logo" class="logo-img">
+                    </a>
+                    <p class="footer-desc">Turning market data into digital profit through scalable IT & AI systems.</p>
+                    <div class="footer-social-wrap">
+                        <a href="https://www.instagram.com/aparoxpvtltd" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/133194006/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:hello@aparox.ai" class="footer-social-btn" aria-label="Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="/#hero">Home</a></li>
+                            <li><a href="/#about">About Us</a></li>
+                            <li><a href="/#services">Services</a></li>
+                            <li><a href="/#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/web-development.html">Web Development</a></li>
+                            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="/content-creation.html">Content Creation</a></li>
+                            <li><a href="/lead-generation.html">Lead Generation</a></li>
+                            <li><a href="/custom-software.html">Custom Software</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:hello@aparox.ai">hello@aparox.ai</a></li>
+                            <li><a href="https://www.instagram.com/aparoxpvtltd" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/133194006/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 APAROX AI PRIVATE LIMITED. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
